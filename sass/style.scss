@@ -1,0 +1,64 @@
+@import "_variables_mixin.scss";
+@import "_normalize.scss";
+@import "_mobile.scss";
+
+@media screen and (min-width:768px) {
+	@import "_tablet.scss";
+}
+@media screen and (min-width:981px) {
+	@import "_desktop.scss";
+}
+
+
+@font-face {
+    font-family: 'uni_sans_boldregular';
+    src: url('../fonts/uni_sans_bold-webfont.woff2') format('woff2'),
+         url('../fonts/uni_sans_bold-webfont.woff') format('woff'),
+         url('../fonts/uni_sans_bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'uni_sans_heavyregular';
+    src: url('../fonts/uni_sans_heavy-webfont.woff2') format('woff2'),
+         url('../fonts/uni_sans_heavy-webfont.woff') format('woff'),
+         url('../fonts/uni_sans_heavy-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'uni_sans_semiboldregular';
+    src: url('../fonts/uni_sans_semi_bold-webfont.woff2') format('woff2'),
+         url('../fonts/uni_sans_semi_bold-webfont.woff') format('woff'),
+         url('../fonts/uni_sans_semi_bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'uni_sans_regularregular';
+    src: url('../fonts/uni_sans_regular-webfont.woff2') format('woff2'),
+         url('../fonts/uni_sans_regular-webfont.woff') format('woff'),
+         url('../fonts/uni_sans_regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{
+	background-color:$red;
+}

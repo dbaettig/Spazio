@@ -1,0 +1,19 @@
+@import "_variables_mixin.scss";
+
+body{
+   
+    .offersSection{
+        background-color:white;
+        h2{
+            font-family: 'Clicker Script', cursive;
+            text-align:center;
+            font-size:60px;
+            font-weight: normal;
+        }
+        p{
+            font-size:24px;
+            text-align:center;
+            padding:10px 50px;
+        }
+    }
+}

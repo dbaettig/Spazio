@@ -1,0 +1,369 @@
+@import "_variables_mixin.scss";
+body{
+width:100%;
+  .mainContent{
+    width: calc(100% - 141px);
+    position: relative;
+    left: 141px;
+  }
+  
+header{
+    margin-bottom:55px;
+    nav{
+        height: 100%;
+        width: 141px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+        background-color:$red;
+        scrollbar-width: none;
+        ul{
+            display: block;
+        
+        li{
+            padding:20px 40px 20px 15px;
+            list-style:none;
+            
+           &:after{
+                content: '';
+                position: absolute;
+                width: 0; height: 3px;
+                display: block;
+                margin-top: 5px;
+                left: 15px;
+                background: #fff;
+                transition: width .2s ease-in;
+                -webkit-transition: width .2s ease-in;
+              }
+               
+              &:hover:after{
+                width: 20%;
+                left: 15px;
+                background: #fff;
+              }
+              
+        }
+    }
+    .logo{
+        display:block;
+        background:url('../images/spazio-logo.svg');
+        background-size:contain;
+        padding:47px 0px 250px 0px;
+        margin: 0 auto;
+        width:80%;
+        background-repeat:no-repeat; 
+        left: 0%;
+        top:0;
+        position:relative;
+
+    }
+    }
+    .hero{
+        background:url('../images/hero.jpg');
+        height: calc(100vh - 180px);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+        .heroLogo{
+            display: block;
+            background: url(../images/spazio-logo.svg);
+            background-size: contain;
+            margin: 0 auto;
+            width: 550px;
+            height: 168px;
+            background-repeat: no-repeat;
+            background-position: center;
+            position: absolute;
+            z-index: 100;
+            top: 65%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .contactSticker{
+            top: 10%;
+            left:90%;
+        }
+        
+    }
+   
+}
+    .iconSection{
+        background: url(../images/groupIcons.svg) no-repeat;
+        background-size: contain;
+        width:843px;
+        height:100px;
+        margin: 0 auto;
+        margin-bottom:55px
+        
+    }
+    .offersSection{
+        background-color:white;
+        h2{
+            font-family: 'Clicker Script', cursive;
+            text-align:center;
+            font-size:60px;
+            font-weight: normal;
+            padding-top:80px;
+        }
+        p{
+            font-size:24px;
+            padding: 10px 100px;
+            margin: 10px 100px;
+        }
+        &-images{
+            padding-top:70px;
+            display:flex;
+            flex-direction:row;
+            .image1{
+            background:url('../images/offer2.jpg');
+            height: 350px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            width:50%;
+                .imageTitle{
+                    position:absolute;
+                    padding:0;
+                    top:50%;
+                    left:50%;
+                    font-size:59px;
+                    color:white;
+                    width:100%;
+                    cursor:pointer;
+                }
+            }
+            .image2{
+                background:url('../images/offer1.jpg');
+                height: 350px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                width:50%;
+                .imageTitle{
+                    font-size:59px;
+                    cursor:pointer;
+
+                }
+            }
+        }
+    }
+    .menuSection{
+        background-color: white;
+        text-align:center;
+        .dateTabs{
+            display: flex;
+            flex-direction: row;
+            button{
+                height:136px;
+                font-size:26px;
+                font-weight: 600;
+                   
+            }
+
+    }
+    h2{
+        padding:70px 0px 0px 0px;
+    }
+
+    #menuSection{
+        
+        h2{
+            font-family: 'Clicker Script', cursive;
+            text-align:center;
+            font-size:60px;
+            font-weight: normal;
+            padding-top:70px;
+        }
+        &-menu{
+            width: 100%;
+            background-color: #f5f1ea;
+            li{
+                list-style:none;
+            }
+            .lunchinfo{
+                text-align: center;
+                h2{ 
+                    font-family: 'Clicker Script', cursive;
+                    text-align:center;
+                    font-size:60px;
+                    font-weight: normal;
+                    padding-top:35px;
+                }
+                h3{
+                    font-size:18px;
+                }
+            }
+            &_pasta, &_pizza{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                .pastaContainer, .pizzaContainer, .drinkWarmContainer{
+                    display: flex;
+                    flex: 50%;
+                    padding-bottom: 25px;
+                    justify-content: space-around;          
+                }
+            }
+            #menuSection-menu_pizzaExtra{
+                width: 519px;
+                margin: 40px;
+                padding: 40px;
+                background-color: #f24843;
+            }
+            .drinks{
+                display:flex;
+                flex-direction: row;
+                    flex-wrap: wrap;
+                #menuSection-menu_drinksWarm {
+                    width:40%;
+                    margin:40px;
+                    padding: 40px;
+                    background-color:$red;
+                    .drinkWarmContainer{
+                        display: flex;
+                        flex: 50%;
+                        padding: 15px; 
+                        justify-content: space-between;
+                        color:white;
+                        h4{
+                            font-size: 20px;
+                            font-weight: bold;
+                        }
+                        p{
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                    }
+            }
+                #menuSection-menu_drinksCold{
+                    width: 40%;
+                    margin:40px;
+                    padding: 50px;
+                    border: solid 3px #f24843;
+                    .drinkColdContainer{  
+                        display:flex;
+                        flex: 50%;
+                        padding: 15px;
+                         justify-content: space-between;
+                        h4{
+                            font-size: 20px;
+                            font-weight: bold;
+                        }
+                        p{
+                            font-size: 20px;
+                            font-weight: 600;
+                        }
+                    }
+                
+            }
+        }
+        .punchline{
+            display: inline-block;
+            width: 100%;
+        }
+        .vl {
+            transform: translate(50%, -110%);
+            border-left: 2px solid black;
+            height: 200px;
+            position: absolute;
+            left: 50%;
+            margin-left: -3px;
+          }
+          .vl2{
+            transform: translate(50%, -105%);
+            border-left: 2px solid black;
+            height: 330px;
+            position: absolute;
+            left: 50%;
+            margin-left: -3px;
+
+          }
+    }
+   
+    }
+}
+
+    .cateringSection{
+            background-color:white;
+            h2{
+                font-family: 'Clicker Script', cursive;
+                text-align:center;
+                font-size:60px;
+                font-weight: normal;
+                padding-top:70px;
+            }
+            &-description{
+                font-size:24px;
+                padding: 10px 300px 30px 300px;
+            }
+            &-infobox{
+                width: 406px;
+                height: 539px;
+                 background-color: #f5f1ea;
+                 position: absolute;
+                 right: 183px;
+                 top: 42px;
+                 text-align:center;
+                 transform:none;
+                  &_Text{
+
+                      hr{
+                        width:65%;
+                      }
+                }
+            }
+            &-image{
+                background:url('../images/catering.jpg');
+                height: 623px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: relative;
+                width:100%;
+            }
+    }
+    
+    .googleMapsSection{
+        .mapouter {
+            text-align: right;
+            height: 517px;
+            width: 100%;
+        }
+
+        .gmap_canvas {
+            overflow: hidden;
+            background: none !important;
+            height: 517px;
+            width: 100%;
+        }
+    }
+}
+footer{
+    height: 340px;
+    background-color: #f5f1ea;
+    h2{
+        font-family: 'Clicker Script', cursive;
+        text-align:center;
+        font-size:60px;
+        font-weight: normal;
+        padding-top:70px;
+    }
+    .footerInfo{
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        padding-top:30px ;
+
+        .openingHours, .contact, .address{
+            padding:0px 50px;
+            text-align:center;
+            line-height:25px;
+        }
+    }
+}

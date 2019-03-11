@@ -1,0 +1,68 @@
+// //TYPOGRAPHY
+// $headerFont: 'Helvetica Neue',
+// 'Helvetica',
+// sans-serif;
+// $bodyFont: 'Helvetica Neue',
+// 'Helvetica',
+// sans-serif;
+// $categoryFont: 'Fjalla One', sans-serif;
+
+//COLORS
+$red: #f24843;
+
+//LAYOUT 
+
+//Fonts
+
+
+//FLEX
+@mixin flex() {
+    display: flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+	display: -webkit-flex;
+}
+
+@mixin direction_column() {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+
+@mixin direction_row() {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+}
+
+@mixin content_center() {
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+@mixin content_between() {
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+@mixin content_end() {
+	-webkit-box-pack: end;
+	-ms-flex-pack: end;
+	justify-content: flex-end;
+}
+
+@mixin wrap() {
+	-webkit-box-flex: wrap;
+	-ms-flex: wrap;
+	flex-wrap: wrap;
+}
+
+@mixin items_center {
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
